@@ -19,6 +19,9 @@
         <%= render @microposts %>
       </ol>
       <%= will_paginate @microposts %>
+    <% else %>
+      <h3>No Posts Yet</h3>
+      <h3>Make a <a href="/">post</a> to let people know whats on your mind!</h3>
     <% end %>
   </div>
 </div>
